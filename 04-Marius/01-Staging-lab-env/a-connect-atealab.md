@@ -1,6 +1,6 @@
 ## Koble til Atealab med Cisco AnyConnect klient
 
-![AnyConnect](/00-files/anyconnect.png "AnyConnect")
+![AnyConnect](/04-Marius/00-files/anyconnect.png "AnyConnect")
 
 |T1|E1| 
 | :------------- | :----------: |
