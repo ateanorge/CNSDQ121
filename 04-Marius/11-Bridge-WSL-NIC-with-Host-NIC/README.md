@@ -20,7 +20,7 @@ netsh interface portproxy add v4tov4 listenport=4000 listenaddress=0.0.0.0 conne
 # Option 2; Bridge WSL eth0 with a physical adapter on the computer
 
 ### This is what the Hyper-V Virtual Switch looks like before doing any changes to it...
-![x](/00-files/hyper-v-wsl-vswitch-normal.png "x")  
+![x](/04-Marius/00-files/hyper-v-wsl-vswitch-normal.png "x")  
 
 ## Configure Hyper-V Virtual Switch from PowerShell
 ```  
@@ -29,7 +29,7 @@ set-vmswitch -name wsl -NetAdapterName Ethernet
 - Replace "Ethernet" with the name of the network adapter you want to bridge with
 
 ### This is what the Hyper-V Virtual Switch looks like before doing any changes to it...
-![x](/00-files/hyper-v-wsl-vswitch-bridge.png "x")  
+![x](/04-Marius/00-files/hyper-v-wsl-vswitch-bridge.png "x")  
 
 ## Start WSL2 with Genie from CMD
 
@@ -90,7 +90,7 @@ wsl genie -v -s
 -s = shell  
 
 ## Verify bridged IP
-![x](/00-files/verify-ubuntu-bridge-ip.png "x")  
+![x](/04-Marius/00-files/verify-ubuntu-bridge-ip.png "x")  
 
 
 <br><br><br><br>

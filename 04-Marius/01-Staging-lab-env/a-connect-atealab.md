@@ -1,6 +1,6 @@
 ## Koble til Atealab med Cisco AnyConnect klient
 
-![AnyConnect](/00-files/anyconnect.png "AnyConnect")
+![AnyConnect](/04-Marius/00-files/anyconnect.png "AnyConnect")
 
 |T1|E1| 
 | :------------- | :----------: |
@@ -12,12 +12,12 @@
 <br><br>
 
 <b>Endre i klienten til å akseptere untrusted servers:</b>  
-![AnyConnect](/00-files/anyconnect-allow-untrusted.png "AnyConnect")
+![AnyConnect](/04-Marius/00-files/anyconnect-allow-untrusted.png "AnyConnect")
 
 <br><br>
 
 <b>Aksepter ugyldig sertifikat:</b>  
-![AnyConnect](/00-files/anyconnect-cert.png "AnyConnect")
+![AnyConnect](/04-Marius/00-files/anyconnect-cert.png "AnyConnect")
 
 <br><br><br><br>
 

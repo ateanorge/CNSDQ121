@@ -12,7 +12,7 @@ Her går vi igjennom;
 Om du ønsker å kjøre manuell installasjon av VM, så må du huske følgende;
  - WSL1 krever ikke hardware virtualiesring
  - WSL2 krever hardware virtualisering, da må du slå på følgende i VMware;
-![Spawn](/00-files/vm-iommu.png "Spawn")
+![Spawn](/04-Marius/00-files/vm-iommu.png "Spawn")
 - Dette tillatter VM'en å kjøre "nested" virtualisering (e.g. Hyper-V, Sandbox og WSL2) 
 - Du kan kjøre opp en novirtWin10.yml (se under) for å teste dette selv.
 
@@ -101,7 +101,7 @@ ansible-playbook Ubuntu.yml
 Kjør en av overnevnte Ansible Playbooks for å sette opp ønsket Windows10-miljø;
 
 Her får du spørsmål om å fylle inn dine initialer, one-brukernavn og passord:
-![Spawn](/00-files/ansible-playbook.png "Spawn")
+![Spawn](/04-Marius/00-files/ansible-playbook.png "Spawn")
 
 <br><br><br><br>
 

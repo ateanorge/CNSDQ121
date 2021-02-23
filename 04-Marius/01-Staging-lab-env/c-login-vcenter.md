@@ -7,7 +7,7 @@
 |password|DITTPASSORD!|  
 
 "VMs and Templates" -> VC02.atealab.net -> Atea -> ComSecDay21Q1 -> ComSecDay21Q1-[Your-Initials]-WLS2-Ubuntu:
-![VMWare Guest IP](/00-files/win10-vm-ip-address.png "VMWare Guest IP")
+![VMWare Guest IP](/04-Marius/00-files/win10-vm-ip-address.png "VMWare Guest IP")
 
 ## Verifisere at du kan logge inn på din Jumpstation med RDP
 

@@ -53,7 +53,7 @@ ssh-keygen -t rsa -b 4096 -C "YourEmail"
   
 <br>  
   
-![x](/00-files/ssh-generate.png "x")  
+![x](/04-Marius/00-files/ssh-generate.png "x")  
   
 <br>
 <br>
@@ -69,7 +69,7 @@ eval "$(ssh-agent -s)"
   
 <br>
   
-![x](/00-files/ssh-run-agent.png "x")  
+![x](/04-Marius/00-files/ssh-run-agent.png "x")  
   
 <br>
 <br>
@@ -85,7 +85,7 @@ ssh-add ~/.ssh/id_rsa
   
 <br>
   
-![x](/00-files/ssh-bind-key.png "x")  
+![x](/04-Marius/00-files/ssh-bind-key.png "x")  
   
 <br>  
 <br>
@@ -101,7 +101,7 @@ vim ~/.ssh/id_rsa.pub
 Merk tekst og kopier til clipboard    
 <br>
   
-![x](/00-files/ssh-copy-key.png "x")  
+![x](/04-Marius/00-files/ssh-copy-key.png "x")  
   
 Gå ut av VIM med  
 
@@ -115,23 +115,23 @@ Gå ut av VIM med
 </p>
   
 <b>Gå til settings:</b>  
-![x](/00-files/github-Settings.png "x")  
+![x](/04-Marius/00-files/github-Settings.png "x")  
 <br>
 <br>
 <b>Gå til SSH:</b>  
-![x](/00-files/github-ssh.png "x")  
+![x](/04-Marius/00-files/github-ssh.png "x")  
 <br>
 <br>
 <b>Skriv inn fornuftig navn og legg til nøkkel:</b>  
-![x](/00-files/github-add-key.png "x")  
+![x](/04-Marius/00-files/github-add-key.png "x")  
 <br>
 <br>
 <b>Og bekrefte med passord (til din private github konto):</b>  
-![x](/00-files/github-confirm-key.png "x")  
+![x](/04-Marius/00-files/github-confirm-key.png "x")  
 <br>
 <br>
 <b>Og nå skal du se nøkkel knyttet til din konto:</b>  
-![x](/00-files/github-key-voila.png "x")  
+![x](/04-Marius/00-files/github-key-voila.png "x")  
 
 * Ja. Du kan slette dette når som helst.  
 
@@ -142,15 +142,15 @@ Gå ut av VIM med
 </p>
 
 <b>Velg enable SSO:</b>  
-![x](/00-files/github-enable-sso.png "x")  
+![x](/04-Marius/00-files/github-enable-sso.png "x")  
 <br>
 <br>
 <b>Logg inn (med Atea konto):</b>  
-![x](/00-files/github-enable-sso-sign-in.png "x")  
+![x](/04-Marius/00-files/github-enable-sso-sign-in.png "x")  
 <br>
 <br>
 <b>Success:</b>  
-![x](/00-files/github-enable-sso-success.png "x")  
+![x](/04-Marius/00-files/github-enable-sso-success.png "x")  
 
 * Ja. Du kan fjerne denne koblingen når som helst.
 
@@ -174,11 +174,11 @@ git clone git@github.com:ateanorge/tc19-spor6.git
 ```  
 
 <b>Akseptere GitHub sertifikat</b>  
-![x](/00-files/git-clone-accept-github-cert.png "x")  
+![x](/04-Marius/00-files/git-clone-accept-github-cert.png "x")  
 <br>
 
 <b>Success:</b>  
-![x](/00-files/git-clone-voila.png "x")  
+![x](/04-Marius/00-files/git-clone-voila.png "x")  
 
 <br>
   
