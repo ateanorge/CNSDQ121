@@ -1,0 +1,52 @@
+Getters Demo
+==============
+python3 napalmGettersDemo.py -s 192.168.0.1 -u cisco -p cisco -o ios
+python3 napalmGettersDemo.py -s 192.168.0.2 -u admin -p admin -o nxos
+
+Config change demo
+====================
+rtr1 advertised-routes Before
+========================
+sh ip bgp nei 192.168.100.2 advertised-routes
+
+Command to configure IOS device
+========================
+more rtr1_config.txt
+python3 napalmMergeScript.py -s 192.168.0.1 -u cisco -p cisco -o ios
+
+rtr1 advertised-routes After
+========================
+sh ip bgp nei 192.168.100.2 advertised-routes
+
+rtr2 advertised-routes Before
+===========================
+sh ip bgp nei 192.168.100.1 advertised-routes
+
+Command to configure NXOS device
+===========================
+more rtr2_config.txt
+python3 napalmMergeScript.py -s 192.168.0.2 -u admin -p admin -o nxos 
+
+rtr2 advertised-routes After
+===========================
+sh ip bgp nei 192.168.100.1 advertised-routes
+
+If previous config exists rollback as follows
+rtr1
+===========
+conf t
+    router bgp 64512
+    no network 101.101.101.101 mask 255.255.255.255
+    no interface Loopback101
+    end
+copy running-config startup-config
+
+rtr2
+===========
+conf t
+   router bgp 64513
+      address-family ipv4 unicast
+      no network 102.102.102.102/32
+   no int lo 102
+   end
+copy running-config startup-config
