@@ -1,0 +1,40 @@
+# Install stuff
+
+- name: perform apt install
+  hosts: localhost
+
+  tasks:
+        - name: apt install lftp
+          apt:
+            name: 'lftp'
+            state: latest
+
+        - name: apt install proftpd
+          apt:
+            name: 'proftpd'
+            state: latest
+
+        - name: apt install wget
+          apt:
+            name: 'wget'
+            state: latest
+       
+        - name: apt install tcpdump
+          apt:
+            name: 'tcpdump'
+            state: latest
+            
+        - name: apt install net-tools
+          apt:
+            name: 'net-tools'
+            state: latest
+            
+        - name: apt install iperf
+          apt:
+            name: 'iperf'
+            state: latest
+
+        - name: apt install iperf3
+          apt:
+            name: 'iperf3'
+            state: latest                        

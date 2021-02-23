@@ -1,0 +1,53 @@
+# https://docs.ansible.com/ansible/latest/modules/vmware_guest_module.html
+- name: Create a virtual machine from a template
+  hosts: localhost
+  gather_facts: False
+  connection: local
+  vars:
+    vcenter_hostname: vc02.atealab.net
+    datacenter: Atea
+    cluster: "Lab Cluster 8 - Cisco HyperFlex"
+    datastore: hx-atealab-data2
+    vmtemplate: ComSecDay21Q1-Jump-Template-WSL2
+    labnet: 12-Labnett
+    name2: ComSecDay21Q1-
+    name4: -WSL2
+    dumpfacts: False
+  vars_prompt:
+
+  - name: "name3"
+    prompt: "What is your initials?"
+    private: no
+  - name: "cli_u"
+    prompt: "What is your one username?"
+    private: no
+  - name: "cli_p"
+    prompt: "What is your password?"
+    private: yes
+
+
+  tasks:
+    - name: Create VM from template
+      vmware_guest:
+        hostname: "{{ vcenter_hostname }}"
+        username: "{{ cli_u }}"
+        password: "{{ cli_p }}"
+        validate_certs: False
+        datacenter: "{{ datacenter }}"
+        folder: "/{{ datacenter }}/vm/ComSecDay21Q1/"
+        template: "{{ vmtemplate }}"
+        cluster: "{{ cluster }}"
+        name: "{{ name2 ~ name3 ~ name4 }}"
+        state: poweredon
+        disk:
+        - size_gb: 100
+          type: thick
+          datastore: "{{ datastore }}"
+        hardware:
+          memory_mb: "{{ vm_memory | default(2048) }}"
+          num_cpus: 2
+        networks:
+        - name: "{{ labnet }}"
+          start_connected: True
+      delegate_to: localhost
+      register: deployedvm

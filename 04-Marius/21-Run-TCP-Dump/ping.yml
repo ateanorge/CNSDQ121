@@ -1,0 +1,17 @@
+# Start ping from Screen
+- hosts: localhost
+
+  vars_prompt:
+    - name: ping_count
+      prompt: Please specify the amount of ping packets to be sent
+      default: "1000"
+      private: no
+
+    - name: ping_ip
+      prompt: Please specify the IP of the remote host
+      default: "10.203.15.140"
+      private: no
+
+  tasks:
+    - name: start ping
+      shell: screen -d -m ping -c {{ ping_count }} {{ ping_ip }}

@@ -1,0 +1,37 @@
+# tcpdump
+- hosts: localhost
+
+  vars:
+      cap_file: packet_capture_{{ ansible_hostname }}_{{ ansible_date_time['epoch'] }}.pcap
+
+  vars_prompt:
+    - name: dur_in_sec
+      prompt: Please specify the runtime duration in seconds
+      default: "60"
+      private: no
+
+    - name: interface
+      prompt: Please specify the interface (e.g. eth0)
+      default: "eth0"
+      private: no
+    
+    - name: dest_folder
+      prompt: Please specify the destination folder (location on server e.g. /var/tmp)
+      default: "/home/lab"
+      private: no
+
+    - name: filter
+      prompt: Please specify the tcpdump filter (e.g. host 10.203.15.140). For no filter just press enter
+      default: "host 10.203.15.140"
+      private: no
+
+ 
+  tasks:
+    - name: start tcpdump
+      shell: screen -d -m tcpdump -G {{ dur_in_sec }} -W 1 -i {{ interface }} -s 0 -w {{ dest_folder}}/{{ cap_file }} {{ filter }}
+
+    - name: Change file permission
+      shell: sudo chmod 777 {{ dest_folder}}/{{cap_file}}
+  
+    - name: Change file permission
+      shell: sudo chmod o=rw {{ dest_folder}}/{{cap_file}}

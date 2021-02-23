@@ -1,0 +1,14 @@
+# Configure FTP
+
+- name: perform changes to proftpd, firewall and restart
+  hosts: localhost
+
+  tasks:
+        - name: remove ipv6 from config
+          shell: echo 'UseIPv6 off' >> /etc/proftpd.conf
+
+        - name: set default root directory for ftp server
+          shell: echo 'DefaultRoot /home/atealab' >> /etc/proftpd.conf
+
+        - name: restart service
+          shell: systemctl restart proftpd
