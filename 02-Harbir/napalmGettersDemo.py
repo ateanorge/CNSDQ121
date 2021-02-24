@@ -65,7 +65,7 @@ try:
     hostname = ios_output['hostname']
     model = ios_output['model']
     os_version = ios_output['os_version']
-    print(f'Device has hostname: {model}; model: {model}; os_version: {os_version}')
+    print(f'Device has hostname: {hostname}; model: {model}; os_version: {os_version}')
     printLineOfHashes()
     #get_lldp_neighbors
     lldpNeighborsInfo = switchConn.get_lldp_neighbors()
