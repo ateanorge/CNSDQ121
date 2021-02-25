@@ -48,6 +48,7 @@ Hva er Windows Subsystem for Linux? Hva er Visual Studio Code? Er dette relevant
 -! Tips and tricks !-
 ```
 #### 99-General-tips
+- Noen generelle tips
 
 <br><br><br><br>
 
