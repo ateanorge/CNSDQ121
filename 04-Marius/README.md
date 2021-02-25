@@ -6,24 +6,27 @@ Hva er Windows Subsystem for Linux? Hva er Visual Studio Code? Er dette relevant
 ```diff
 -! Lab enviroment !-
 ```
-#### 00-Staging-lab-env
+#### 01-Staging-lab-env
 - Koble til AteaLab med Cisco AnyConnect
 - Kjøre opp en Windows 10 sandbox fra VMware-template
 - Logge inn i VMware vCenter for å sjekke IP, og koble på RDP
 - Installere WSL2 og Ubuntu manuelt
 
-#### 01-Setup-Git
+#### 02-Setup-Git
 - Konfigurere git på WLS-Ubuntu
 - Sette opp kobling mot GitHub med sertifikat (ssh)
 - Hente ned et repository fra GitHub til datamaskinen
 
-#### 02-VisualStudioCode
+#### 03-VisualStudioCode
 - Installere Visual Studio Code
 - Sette opp extension for integrasjon mot WSL
 - Bruk av VSC, Git og bash
 
-#### 03-Install-Ansible
+#### 04-Install-Ansible
 - Installere Ansible på WSL-Ubuntu
+
+#### 05-Install-apps
+- Installere apps via Ansible Playbooks
 
 ```diff
 -! Tuning (hacking?) WSL2 enviroment !-
