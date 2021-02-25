@@ -1,5 +1,7 @@
 # WSL2 and Visual Studio Code with a hint of bash  
 
+Hva er Windows Subsystem for Linux? Hva er Visual Studio Code? Er dette relevant for deg? Håper du finner svaret i løpet av denne sesjonen :)
+
 ## Agenda 
 ```diff
 -! Lab enviroment !-
