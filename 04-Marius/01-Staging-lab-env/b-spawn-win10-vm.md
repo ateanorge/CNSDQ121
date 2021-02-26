@@ -1,9 +1,16 @@
 # Opprette Windows 10 VM fra template via Ansible
 
 Her går vi igjennom; 
+- Overordnet forskjell på WSL1 og WSL2
 - Hva du må gjøre om du skal installere manuelt
 - Hva er de forskjellige templatene
 - Hvordan du oppretter du VM fra template via Ansible
+
+<br><br>
+
+## WSL1 vs WSL2?
+
+https://docs.microsoft.com/en-us/windows/wsl/compare-versions
 
 <br><br>
 
