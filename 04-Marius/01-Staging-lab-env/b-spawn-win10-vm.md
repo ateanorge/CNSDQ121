@@ -10,7 +10,7 @@ Her går vi igjennom;
 
 ## WSL1 vs WSL2?
 
-https://docs.microsoft.com/en-us/windows/wsl/compare-versions
+https://docs.microsoft.com/en-us/windows/wsl/compare-versions 
 
 <br><br>
 
