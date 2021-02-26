@@ -53,6 +53,10 @@ Hva er Windows Subsystem for Linux? Hva er Visual Studio Code? Er dette relevant
 #### 99-General-tips
 - Noen generelle tips
 
+## Dette var en til kommentar
+
+Bra å bruke VSC med WSL
+
 <br><br><br><br>
 
 ```diff
