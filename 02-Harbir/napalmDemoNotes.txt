@@ -1,7 +1,7 @@
 Getters Demo
 ==============
-python3 napalmGettersDemo.py -s 192.168.0.1 -u cisco -p cisco -o ios
-python3 napalmGettersDemo.py -s 192.168.0.2 -u admin -p admin -o nxos
+python3 /root/scripts/napalmGettersDemo.py -s 192.168.0.1 -u cisco -p cisco -o ios
+python3 /root/scripts/napalmGettersDemo.py -s 192.168.0.2 -u admin -p admin -o nxos
 
 Config change demo
 ====================
@@ -11,8 +11,8 @@ sh ip bgp nei 192.168.100.2 advertised-routes
 
 Command to configure IOS device
 ========================
-more rtr1_config.txt
-python3 napalmMergeScript.py -s 192.168.0.1 -u cisco -p cisco -o ios
+more /root/scripts/rtr1_config.txt
+python3 /root/scripts/napalmMergeScript.py -s 192.168.0.1 -u cisco -p cisco -o ios
 
 rtr1 advertised-routes After
 ========================
@@ -24,8 +24,8 @@ sh ip bgp nei 192.168.100.1 advertised-routes
 
 Command to configure NXOS device
 ===========================
-more rtr2_config.txt
-python3 napalmMergeScript.py -s 192.168.0.2 -u admin -p admin -o nxos 
+more /root/scripts/rtr2_config.txt
+python3 /root/scripts/napalmMergeScript.py -s 192.168.0.2 -u admin -p admin -o nxos 
 
 rtr2 advertised-routes After
 ===========================
