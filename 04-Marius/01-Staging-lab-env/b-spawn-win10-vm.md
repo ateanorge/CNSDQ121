@@ -3,7 +3,7 @@
 Her går vi igjennom; 
 - Hva du må gjøre om du skal installere manuelt
 - Hva er de forskjellige templatene
-- Hvordan du oppretter du VM fra template via Ansibled
+- Hvordan du oppretter du VM fra template via Ansible
 
 <br><br>
 
