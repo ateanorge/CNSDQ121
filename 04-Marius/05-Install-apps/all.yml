@@ -4,6 +4,36 @@
   hosts: localhost
 
   tasks:
+        - name: apt install nano
+          apt:
+            name: 'nano'
+            state: latest
+
+        - name: apt install lsof
+          apt:
+            name: 'lsof'
+            state: latest
+
+        - name: apt install python-pip
+          apt:
+            name: 'python3-pip'
+            state: latest
+
+        - name: apt install python-wheel
+          apt:
+            name: 'python3-wheel'
+            state: latest
+
+        - name: apt install cowsay
+          apt:
+            name: 'cowsay'
+            state: latest            
+
+        - name: apt install fortune-mod
+          apt:
+            name: 'fortune-mod'
+            state: latest
+
         - name: apt install lftp
           apt:
             name: 'lftp'
@@ -37,4 +67,4 @@
         - name: apt install iperf3
           apt:
             name: 'iperf3'
-            state: latest                        
+            state: latest
