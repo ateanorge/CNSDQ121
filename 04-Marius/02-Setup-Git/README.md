@@ -155,7 +155,7 @@ Gå ut av VIM med
 Clone master:  
 
 ```  
-git clone git@github.com:mariushole/ComSecDay21Q1.git  
+git clone git@github.com:ateanorge/CNSDQ121.git  
 ```  
 
 <b>Akseptere GitHub sertifikat - så laster den ned repo lokalt</b>  
