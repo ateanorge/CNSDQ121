@@ -26,7 +26,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 https://hub.docker.com/r/linuxserver/smokeping
 - We use Linuxservers image, which is the most popular
 <br>
-- Wait until Docker is started...
+- Wait until Docker is started...  
 - Pull with the following bash command  
 
 ```
