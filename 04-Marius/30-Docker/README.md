@@ -19,55 +19,88 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
 - In settings, enable the WSL distro -> Apply and Restart
 ![x](/04-Marius/00-files/docker-wsl2-03.png "x")
-
+- Restart computer...
 
 ## Pull SmokePing image from Docker hub
 
+https://hub.docker.com/r/linuxserver/smokeping
+- We use Linuxservers image, which is the most popular
+<br>
+- Wait until Docker is started...
+- Pull with the following bash command
 ```
-add config
+docker pull linuxserver/smokeping
 ```
 
 ## Prepare run variables
 
+- Create data and config folder
 ```
-add config
+cd ~
+mkdir smokeping
+cd smokeping
+mkdir data
+mkdir config
 ```
-
 
 ## Run SmokePing with run command
 
+- Start SmokePing Docker container with the following run command and variables
 ```
-add config
+docker run -d \
+  --name=smokeping \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Europe/London \
+  -p 80:80 \
+  -v /home/atealab/smokeping/config:/config \
+  -v /home/atealab/smokeping/data:/data \
+  --restart unless-stopped \
+  ghcr.io/linuxserver/smokeping
 ```
 
 
 ## Verify in browser (with default config)
 
+- Check the IP address for the Ubuntu WSL from bash (eth0)
 ```
-add config
+ip a
 ```
-
+- Open browser and open the Ubuntu IP-adress
 
 ## Stop the image
+
+- Now stop the Docker-image
+![x](/04-Marius/00-files/docker-wsl2-04.png "x")
+
 
 
 ## Delete data files
 
+- Delete the data, before changing the config
 ```
-add config
+cd /home/atealab/smokeping/data
+rm -f -r *
 ```
 
-## Edit config files (Targets)
+## Edit config files (Probes)
 
+- Configure fping probe intervals
 ```
-add config
+nano /home/atealab/smokeping/config/Probes
+```
+- Add the following under the FPing probes (under binary)
+```
+ hostinterval = 1.5
+ pings = 150
+ step = 300
 ```
 
 ## Start container again
-
+- Start the container again (same place as stopping it)
 
 ## Verify in browser (with new config)
-
+- Open browser, browse to the Ubuntu-WSL IP
 
 <br><br><br><br>
 
