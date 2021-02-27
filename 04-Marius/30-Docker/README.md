@@ -32,7 +32,7 @@ https://hub.docker.com/r/linuxserver/smokeping
 docker pull linuxserver/smokeping
 ```
 
-## Prepare run variables
+## Prepare run variables 
 
 - Create data and config folder
 ```
