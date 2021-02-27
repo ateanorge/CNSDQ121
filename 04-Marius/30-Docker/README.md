@@ -92,8 +92,8 @@ nano /home/atealab/smokeping/config/Probes
 - Add the following under the FPing probes (under binary)
 ```
  hostinterval = 1.5
- pings = 150
- step = 300
+ pings = 15
+ step = 30
 ```
 
 ## Start container again
