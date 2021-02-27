@@ -2,6 +2,8 @@
 
 Hva er Windows Subsystem for Linux? Hva er Visual Studio Code? Er dette relevant for deg? Håper du finner svaret i løpet av denne sesjonen :)
 
+[Link to video recodring](https://northeuroper-notifyp.svc.ms/api/v2/tracking/method/Click?mi=3V1i5JcN-kGV565z1t_vPQ&tc=StreamVideo&cs=9ae60979bf4dcbf00b27849f919a2918&ru=https%3a%2f%2fweb.microsoftstream.com%2fvideo%2f53b338ba-415b-4a55-b342-4d4f03a8d70a) 
+
 ## Agenda 
 ```diff
 -! Lab enviroment !-
