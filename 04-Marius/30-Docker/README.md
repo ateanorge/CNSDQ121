@@ -24,8 +24,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 ## Pull SmokePing image from Docker hub
 
 https://hub.docker.com/r/linuxserver/smokeping
-- We use Linuxservers image, which is the most popular
-<br>
+- We use Linuxservers image, which is the most popular  
 - Wait until Docker is started...  
 - Pull with the following bash command  
 
