@@ -51,7 +51,7 @@ docker run -d \
   --name=smokeping \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Europe/London \
+  -e TZ=Europe/Oslo \
   -p 80:80 \
   -v /home/atealab/smokeping/config:/config \
   -v /home/atealab/smokeping/data:/data \
