@@ -28,7 +28,7 @@ https://hub.docker.com/r/linuxserver/smokeping
 - Which is the most popular SmokePing image on Docker Hub  
 
 ```+
-You don't need to pull the image manually if you add it to the bash run command (further down in this section) 
++ You don't need to pull the image manually if you add it to the bash run command (further down in this section) 
 ```
 
 - Wait until Docker is started...  
