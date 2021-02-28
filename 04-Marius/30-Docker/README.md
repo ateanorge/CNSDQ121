@@ -21,10 +21,16 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 ![x](/04-Marius/00-files/docker-wsl2-03.png "x")
 - Restart computer...
 
-## Pull SmokePing image from Docker hub
+## Linuxserver SmokePing Docker image at Docker hub
 
+We use Linuxservers SmokePing Docker Image;
 https://hub.docker.com/r/linuxserver/smokeping
-- We use Linuxservers image, which is the most popular  
+- Which is the most popular SmokePing image on Docker Hub  
+
+```+
+You don't need to pull the image manually if you add it to the bash run command (further down in this section) 
+```
+
 - Wait until Docker is started...  
 - Pull with the following bash command  
 
